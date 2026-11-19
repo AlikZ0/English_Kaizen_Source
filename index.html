@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="43 практических урока английского на каждый день">
+<title>Английский по кайдзену</title>
+<link rel="stylesheet" href="style.css">
+<script defer src="lessons.js"></script>
+<script defer src="app.js"></script>
+</head>
+<body>
+<header><div class="wrap brand"><span class="logo" aria-hidden="true">Aa</span> Английский по кайдзену</div></header>
+<main class="wrap">
+<div class="hero"><div><p class="eyebrow">19 ноября — 31 декабря 2026</p><h1>Английский каждый день</h1></div><div class="progress"><strong id="progress-label"></strong><progress id="progress" max="43" value="0" aria-label="Выполненные уроки"></progress></div></div>
+<div class="layout">
+<aside class="panel" aria-label="Календарь уроков">
+<div class="heading"><h2>Календарь</h2><button id="today" type="button" class="link">Сегодня</button></div>
+<div id="calendar"></div>
+</aside>
+<article id="lesson" class="panel lesson" aria-labelledby="title">
+<p id="date" class="eyebrow"></p><h2 id="title" tabindex="-1"></h2>
+<section class="phrase" aria-label="Фраза дня">
+<div class="heading"><h3>Фраза дня</h3><button id="listen" type="button">Послушать</button></div>
+<p id="audio-status" role="status" hidden></p>
+<details id="example"><summary>Показать фразу и перевод</summary><p id="english" lang="en"></p><p id="translation"></p></details>
+</section>
+<form id="quiz"><h3>Переведи на английский</h3><label id="prompt" for="answer"></label>
+<div class="entry"><input id="answer" lang="en" autocomplete="off" spellcheck="false" placeholder="Твой ответ" required><button type="submit">Проверить</button></div>
+<p id="feedback" role="status" hidden></p></form>
+<section class="practice"><h3>Практика вслух</h3><p id="task"></p><ol id="questions" lang="en" hidden>
+<li>Tell me about yourself.</li><li>Can you describe a project you worked on?</li><li>Tell me about a bug you fixed.</li><li>How do you test your frontend code?</li><li>What kind of role are you looking for?</li></ol></section>
+<p id="storage-status" role="status" hidden></p>
+<div class="actions"><button id="prev" type="button">Предыдущий</button><button id="done" type="button" class="primary"></button><button id="next" type="button">Следующий</button></div>
+</article>
+</div>
+</main>
+</body></html>
