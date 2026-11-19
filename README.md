@@ -14,6 +14,8 @@ python3 -m http.server 8000
 
 Открой [http://localhost:8000](http://localhost:8000).
 
+link https://alikz0.github.io/English_Kaizen_Source/  
+
 ## Как проходить уроки
 
 1. Выбери дату в календаре. Кнопка «Сегодня» доступна в даты курса и учитывает часовой пояс Еревана.
